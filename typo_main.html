@@ -1,0 +1,44 @@
+<!DOCTYPE html><!--21761046_박지훈!-->
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>main</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <body style="overflow:hidden">
+    <section class="banner" id="sec">
+      <header>
+          <a herf="#" class="logo"> </a>
+          <div id="toggle" onclick="toggle()"></div>
+      </header>
+
+    <div id="navigation">
+      <ul>
+        <li><a href="Index.html">home</a></li>
+        <li><a href="typo_main.html">MAIN</a></li>
+
+        <li><a href="futura 서체꼴.html">FUTURA</a></li>
+
+        <li><a href="futura 크기와 무게.html">크기와 무게</a></li>
+
+      </ul>
+      </div>
+
+      <div id="contents">
+        <img src="./img/Main.gif"> <!--비쥬얼커뮤니케이션 웹작업 과제로 작성한 Java입니다.-->
+      </div>
+      </section>
+      <script type="text/javascript">
+        function toggle(){
+          var sec = document.getElementById('sec');
+          var nav = document.getElementById('navigation');
+          sec.classList.toggle('active');
+          nav.classList.toggle('active');
+        }
+        </script>
+
+
+  </body>
+</html>
