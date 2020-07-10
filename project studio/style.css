@@ -1,0 +1,131 @@
+/* 21761046_박지훈*/
+
+@import url(http://fonts.g@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+header {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+display: flex;
+justify-content: space-between;
+padding: 40px 100px;
+z-index: 10000;
+transition: 0.6s;
+}
+header .logo{
+  position: relative;
+  font-weight: 700;
+  color:#fff;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+header #toggle{
+  position: relative;
+  width:30px;
+  height: 30px;
+  cursor: pointer;
+}
+header #toggle:before{
+  content: '';
+  position: absolute;
+  top: 7px;
+  width: 100%;
+  height: 4px;
+  background: #232323;
+}
+header #toggle:after{
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 100%;
+  height: 3px;
+  background: #232323;
+}
+.banner.active header #toggle:before{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) rotate(45deg);
+}
+.banner.active header #toggle:after{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+#main{
+  margin-top:-5px;
+}
+
+img {
+  width:100%;
+}
+
+#navigation{
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 400px;
+  height: 100vh;
+  background: #0d0d0d;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  transition: 0.8s;
+  opacity: 80%;
+}
+
+#navigation.active{
+  right: 0;
+}
+#navigation ul{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#navigation ul li{
+  list-style: none;
+}
+#navigation ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2em;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin:0;
+}
+#navigation ul li a:after{
+  display:block;
+  content: '';
+  border-bottom: solid 4px #ff4b4b;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+#navigation ul li a:hover:after { transform: scaleX(1); }
+
+#topBtn{
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 22px;
+  width: 40px;
+  height: 50px;
+  background: #FE5051;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+#contents {
+  margin-top:-16px;
