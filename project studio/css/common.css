@@ -1,0 +1,184 @@
+/*21761046_박지훈*/
+
+* {
+  margin:0;
+  padding:0;
+}
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 12px;
+  color:#232323;
+  background-color: #ffffff;
+}
+ul {
+  list-style-type: none;
+}
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color:#5c0d12;
+}
+.clear {
+  clear:both;
+}
+/*-헤더--*/
+header {
+  height: 128px;
+}
+header #top {
+  width: 990px;
+  margin:0 auto;
+  /*border: solid 1px #0000ff;*/
+}
+header #logo {
+  float: left;
+  margin:30px 0 0 0;
+  /*border: solid 1px #0000ff;*/
+}
+/* 검색 */
+header #search {
+  float: left;
+  font-family:"Sans-serif";
+  font-size: 12px;
+  color:#5c0d12;
+  margin:40px 0 0 150px;
+  /*border: solid 1px #0000ff;*/
+}
+header #search #search_title {
+  float: left;
+  margin-top: 3px;
+  font-size: 14px;
+}
+header #search #search_form {
+  float:left;
+}
+header #search #search_form input {
+  width: 160px;
+  height: 20px;
+  border: 0;
+  background-color: #ffffff;
+  border-bottom: solid 1px #cccccc;
+  margin-left: 5px;
+}
+header #search #search_button {
+  float: left;
+  margin:3px 0 0 3px;
+}
+/*상단메뉴*/
+header #top_menu {
+  float:right;
+  margin-top:45px;
+  /*border: solid 1px #0000ff;*/
+}
+header #top_menu a:link {
+  font-size: 11px;
+  color:#888888;
+}
+header #top_menu a:visited {
+  font-size: 11px;
+  color:#888888;
+}
+header #top_menu a:hover {
+  font-size: 11px;
+  color:#888888;
+}
+header #top_menu a:active {
+  font-size: 11px;
+  color:#888888;
+}
+header #top_menu li.green a:link {
+  color:#5c0d12;
+}
+header #top_menu li.green a:visited {
+  color:#5c0d12;
+}
+header #top_menu li.green a:hover {
+  color:#5c0d12;
+}
+header #top_menu li.green a:active {
+  color:#5c0d12;
+}
+header #top_menu li {
+  display: inline;
+  margin-left:10px;
+}
+/*메인메뉴*/
+header #main_menu {
+  height: 45px;
+  font-size: 14px;
+  margin-top: 15px;
+  background-color: #ffffff;
+  border-bottom: solid 2px #efefef;
+  /*border: solid 1px #0000ff;*/
+}
+header #main_menu ul {
+  width: 990px;
+  margin: auto;
+  /*border: solid 1px #0000ff;*/
+  padding-top: 12px;
+  text-align: center;
+}
+header #main_menu li {
+  display: inline;
+  margin:0 57px;
+}
+header #main_menu a:link {
+  color:#888888;
+}
+header #main_menu a:visited {
+  color:#888888;
+}
+header #main_menu a:hover {
+  color:#5c0d12;
+}
+header #main_menu a:active {
+  color:#888888;
+}
+/*-----푸터-----*/
+footer {
+  height: 200px;
+  margin-top: 50px;
+}
+footer #footer_menu_box {
+  height:50px;
+  background-color: #4e4c4d;
+}
+footer #footer_menu {
+  width: 1010px;
+  margin:0 auto;
+  padding-top: 15px;
+}
+footer #footer_menu ul {
+  margin-left: 210px;
+}
+footer #footer_menu li {
+  display:inline;
+  margin-left: 20px;
+}
+footer #footer_menu a:link {
+  color:#ffffff;
+}
+footer #footer_menu a:hover {
+  color:#ffffff;
+}
+footer #footer_menu a:visited {
+  color:#ffffff;
+}
+footer #footer_menu a:active {
+  color:#ffffff;
+}
+footer #footer_box {
+  width: 1010px;
+  margin:auto;
+}
+footer #footer_box div {
+  float: left;
+}
+footer #footer_box #footer_logo {
+  margin:50px 0 0 30px;
+}
+footer #footer_box #address {
+  margin:25px 0 0 10px;
+}
+footer #footer_box #footer_banner {
+  margin:50px 0 0 70px;
+}
